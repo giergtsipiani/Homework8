@@ -1,0 +1,125 @@
+/* ////fonts////// */
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Autour+One&display=swap');
+
+/* ////////chess container ///// */
+.section{
+    background-image: url(../images/png/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/* /////chess board////// */
+.chess-board{
+    width: 648px;
+    height: 648px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 4px solid black;
+    
+
+}
+/* ////squares///// */
+.white-squares{
+    width: 80px;
+    height: 80px;
+    background-color:azure;
+    position: relative;
+
+
+
+}
+.black-squares{
+    width: 80px;
+    height: 80px;
+    background-color: rgb(48, 180, 175);
+    position: relative;
+
+
+}
+/* ////numerations */
+.horizontal-numeration{
+    font-family: 'Young Serif', serif;
+    font-size: 16px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    
+}
+
+.vertical-numeration{
+    font-family: 'Young Serif', serif;
+    font-size: 16px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+
+
+}
+/* /////pieces///// */
+.piece{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 60px;
+}
+@keyframes game{
+
+
+}
+
+
+/* //////players profile ////*/
+
+/* /benjamin// */
+.benjamin-info{
+    width: 648px;
+    height: 120px;
+    background-image: url(../images/png/quote1.jpg);
+    background-size: cover;
+    background-position: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -460px);
+    display: flex;
+    align-items: center;
+    border-radius: 20px 20px 0 0;
+}
+
+.garry-info{
+    width: 648px;
+    height: 120px;
+    background-image: url(../images/png/quote2.jpg);
+    background-size: cover;
+    background-position: left;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 340px);
+    display: flex;
+    align-items: center;
+    border-radius: 0 0 20px 20px;
+
+}
+
+.profile-photo{
+    height: 110px;
+    margin-left: 10px;
+    
+}
+.name{
+    margin-left: 20px;
+    font-family: 'Autour One', cursive;
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin-top: 70px;
+    color: rgb(145, 15, 15);
+    font-size: 17px;
+}
