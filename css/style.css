@@ -69,10 +69,6 @@
     transform: translate(-50%,-50%);
     height: 60px;
 }
-@keyframes game{
-
-
-}
 
 
 /* //////players profile ////*/
@@ -111,6 +107,7 @@
 
 .profile-photo{
     height: 110px;
+    width: 80px;
     margin-left: 10px;
     
 }
@@ -124,3 +121,28 @@
     font-size: 17px;
 }
 
+/* /////// piece img styles and aminations///*/
+#e2-pawn{
+    position: absolute;
+    animation-name: e2;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-timing-function: ease;
+}
+
+
+@keyframes e2{
+    50% {transform:translate(-50%, -325%);}
+
+}
+#c7-pawn{
+    position: absolute;
+    animation-name: c7;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-timing-function: ease;
+}
+@keyframes c7{
+    50% {transform: translate(-50%, 325%);}
+
+}
